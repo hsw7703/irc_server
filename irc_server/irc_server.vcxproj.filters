@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Comman">
+      <UniqueIdentifier>{f2c81f97-2d69-429a-8c2d-09f28455ce85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Command">
+      <UniqueIdentifier>{85d16437-8ad8-4f80-a02c-eaa713a0dce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Command\Connection">
+      <UniqueIdentifier>{9366feed-af99-45b8-8a9d-ec80c243047b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Comman\Connection">
+      <UniqueIdentifier>{a4d93bd5-fd0c-445b-b321-c14f06987cf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Comman\Channel">
+      <UniqueIdentifier>{794ca8be-b5e8-4ee2-bd6c-11c44237999f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Command\Channel">
+      <UniqueIdentifier>{c7d83184-54de-4717-9a6c-69ea150296c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Command\SendingMessage">
+      <UniqueIdentifier>{1010b6b2-f57b-490d-9269-7202ce66f794}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Comman\SendingMessage">
+      <UniqueIdentifier>{7cbce77d-4aa4-4ff7-ac4a-eb53bb71f8e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Comman\ServerQueries">
+      <UniqueIdentifier>{20aefa37-4229-4316-821c-f89d687a95dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Command\ServerQueries">
+      <UniqueIdentifier>{9d4b152f-1ad4-4f8f-b2fd-428c9dbfecf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Comman\UserBaseQuery">
+      <UniqueIdentifier>{bed8b414-7d6c-4d0a-aea2-6d2b8b476c38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Command\UserBaseQuery">
+      <UniqueIdentifier>{237584e8-a3b2-422a-a7a9-9ce875c7f494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Comman\Ohter">
+      <UniqueIdentifier>{3553e17b-6e09-4872-9e3e-28a7e1e6c564}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Command\Other">
+      <UniqueIdentifier>{89ac6dea-8f1f-421f-b352-cceadd3a6628}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Server.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Channel.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Data.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="UserCommand.cpp">
+      <Filter>소스 파일\Comman\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="PassCommand.cpp">
+      <Filter>소스 파일\Comman\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="NickCommand.cpp">
+      <Filter>소스 파일\Comman\Connection</Filter>
+    </ClCompile>
+    <ClCompile Include="InviteCommand.cpp">
+      <Filter>소스 파일\Comman\Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="JoinCommand.cpp">
+      <Filter>소스 파일\Comman\Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="KickCommand.cpp">
+      <Filter>소스 파일\Comman\Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="ListCommand.cpp">
+      <Filter>소스 파일\Comman\Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="PartCommand.cpp">
+      <Filter>소스 파일\Comman\Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="QuitCommand.cpp">
+      <Filter>소스 파일\Comman\Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="TopicCommand.cpp">
+      <Filter>소스 파일\Comman\Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="NamesCommand.cpp">
+      <Filter>소스 파일\Comman\Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="PrivmsgCommand.cpp">
+      <Filter>소스 파일\Comman\SendingMessage</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeCommand.cpp">
+      <Filter>소스 파일\Comman\ServerQueries</Filter>
+    </ClCompile>
+    <ClCompile Include="WhoIsCommand.cpp">
+      <Filter>소스 파일\Comman\UserBaseQuery</Filter>
+    </ClCompile>
+    <ClCompile Include="UserHistory.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="WhoWasCommand.cpp">
+      <Filter>소스 파일\Comman\UserBaseQuery</Filter>
+    </ClCompile>
+    <ClCompile Include="Command.cpp">
+      <Filter>소스 파일\Comman</Filter>
+    </ClCompile>
+    <ClCompile Include="PingPongCommand.cpp">
+      <Filter>소스 파일\Comman\Ohter</Filter>
+    </ClCompile>
+    <ClCompile Include="UserHostCommand.cpp">
+      <Filter>소스 파일\Comman\Ohter</Filter>
+    </ClCompile>
+    <ClCompile Include="Setting.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Server.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Channel.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Data.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="NickCommand.h">
+      <Filter>헤더 파일\Command\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="PassCommand.h">
+      <Filter>헤더 파일\Command\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="UserCommand.h">
+      <Filter>헤더 파일\Command\Connection</Filter>
+    </ClInclude>
+    <ClInclude Include="InviteCommand.h">
+      <Filter>헤더 파일\Command\Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="JoinCommand.h">
+      <Filter>헤더 파일\Command\Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="KickCommand.h">
+      <Filter>헤더 파일\Command\Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="ListCommand.h">
+      <Filter>헤더 파일\Command\Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="PartCommand.h">
+      <Filter>헤더 파일\Command\Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="QuitCommand.h">
+      <Filter>헤더 파일\Command\Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="TopicCommand.h">
+      <Filter>헤더 파일\Command\Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="NamesCommand.h">
+      <Filter>헤더 파일\Command\Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="PrivmsgCommand.h">
+      <Filter>헤더 파일\Command\SendingMessage</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeCommand.h">
+      <Filter>헤더 파일\Command\ServerQueries</Filter>
+    </ClInclude>
+    <ClInclude Include="WhoIsCommand.h">
+      <Filter>헤더 파일\Command\UserBaseQuery</Filter>
+    </ClInclude>
+    <ClInclude Include="UserHistory.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="WhoWasCommand.h">
+      <Filter>헤더 파일\Command\UserBaseQuery</Filter>
+    </ClInclude>
+    <ClInclude Include="Command.h">
+      <Filter>헤더 파일\Command</Filter>
+    </ClInclude>
+    <ClInclude Include="PingPongCommand.h">
+      <Filter>헤더 파일\Command\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="UserHostCommand.h">
+      <Filter>헤더 파일\Command\Other</Filter>
+    </ClInclude>
+    <ClInclude Include="Setting.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
