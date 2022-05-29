@@ -67,7 +67,11 @@ Server::Server() {
 }
 
 Server::~Server() {
-
+	std::map<SOCKET, User>::iterator it;
+	for (it = this->mData.GetUser().begin(); it != this->mData.GetUser().end(); it++) {
+		closesocket(it->first);
+	}
+	
 }
 
 void Server::ErrorHandling(std::string msg) {
