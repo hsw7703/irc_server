@@ -46,10 +46,14 @@ Server::Server() {
 		memcpy(&(handleInfo->clntAdr), &clntAdr, addrLen);
 
 		if (clntSock != 0) {
+			wchar_t wStr[INET_ADDRSTRLEN];
+			char str[INET_ADDRSTRLEN];
 			CreateIoCompletionPort(reinterpret_cast<HANDLE>(clntSock), comPort, reinterpret_cast<DWORD>(handleInfo), 0);
 			this->mData.GetMutex().lock();
 			this->mData.GetUser()[clntSock] = User(clntSock);
-			this->mData.GetUser()[clntSock].SetHost("host");
+			InetNtop(AF_INET, &clntAdr.sin_addr, wStr, INET_ADDRSTRLEN);
+			WideCharToMultiByte(CP_ACP, 0, wStr, -1, str, INET_ADDRSTRLEN, NULL, NULL);
+			this->mData.GetUser()[clntSock].SetHost(str);
 			this->mData.GetMutex().unlock();
 		}
 
