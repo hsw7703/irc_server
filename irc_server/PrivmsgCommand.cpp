@@ -18,7 +18,6 @@ void PrivmsgCommand::Run(const std::string& msg, const SOCKET& sock) {
 	beforeFound = msg.find(" ");
 	afterFound = msg.find(" :");
 	command = msg.substr(0, beforeFound);
-	std::cout << command << std::endl;
 	if (afterFound == std::string::npos) {
 		afterFound = msg.find(" ", beforeFound + 1);
 	}
