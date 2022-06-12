@@ -48,7 +48,7 @@ Server::Server() {
 		if (clntSock != 0) {
 			wchar_t wStr[INET_ADDRSTRLEN];
 			char str[INET_ADDRSTRLEN];
-			CreateIoCompletionPort(reinterpret_cast<HANDLE>(clntSock), comPort, reinterpret_cast<DWORD>(handleInfo), 0);
+			CreateIoCompletionPort(reinterpret_cast<HANDLE>(clntSock), comPort, reinterpret_cast<ULONG_PTR>(handleInfo), 0);
 			this->mData.GetMutex().lock();
 			this->mData.GetUser()[clntSock] = User(clntSock);
 			InetNtop(AF_INET, &clntAdr.sin_addr, wStr, INET_ADDRSTRLEN);
@@ -92,7 +92,8 @@ void Server::ThreadMain(HANDLE pComPort) {
 
 	size_t beforeFound, afterFound;
 	while (1) {
-		GetQueuedCompletionStatus(hComPort, &bytesTrans, reinterpret_cast<LPDWORD>(&handleInfo), reinterpret_cast<LPOVERLAPPED*>(&ioInfo), INFINITE);
+		//GetQueuedCompletionStatus()
+		GetQueuedCompletionStatus(hComPort, &bytesTrans, reinterpret_cast<PULONG_PTR>(&handleInfo), reinterpret_cast<LPOVERLAPPED*>(&ioInfo), INFINITE);
 		sock = handleInfo->hClntSock;
 		if (ioInfo->rwMode == READ) {
 			if (bytesTrans == 0) {
