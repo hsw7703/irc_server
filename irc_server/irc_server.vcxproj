@@ -159,7 +159,6 @@
     <ClCompile Include="PrivmsgCommand.cpp" />
     <ClCompile Include="QuitCommand.cpp" />
     <ClCompile Include="Server.cpp" />
-    <ClCompile Include="Setting.cpp" />
     <ClCompile Include="TimeCommand.cpp" />
     <ClCompile Include="TopicCommand.cpp" />
     <ClCompile Include="User.cpp" />
@@ -187,7 +186,6 @@
     <ClInclude Include="PrivmsgCommand.h" />
     <ClInclude Include="QuitCommand.h" />
     <ClInclude Include="Server.h" />
-    <ClInclude Include="Setting.h" />
     <ClInclude Include="TimeCommand.h" />
     <ClInclude Include="TopicCommand.h" />
     <ClInclude Include="User.h" />

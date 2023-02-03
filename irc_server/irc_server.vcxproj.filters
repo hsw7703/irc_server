@@ -132,9 +132,6 @@
     <ClCompile Include="UserHostCommand.cpp">
       <Filter>소스 파일\Comman\Ohter</Filter>
     </ClCompile>
-    <ClCompile Include="Setting.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Server.h">
@@ -211,9 +208,6 @@
     </ClInclude>
     <ClInclude Include="UserHostCommand.h">
       <Filter>헤더 파일\Command\Other</Filter>
-    </ClInclude>
-    <ClInclude Include="Setting.h">
-      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
