@@ -37,7 +37,7 @@ public:
 public:
 private:
 private:
-	Data& mData = Data::GetIncetence();
+	Data& mData = Data::GetInstance();
 
 	NickCommand mNickCommand;
 	PassCommand mPassCommand;

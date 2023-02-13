@@ -10,5 +10,5 @@ public:
 	void Run(const SOCKET& sock);
 private:
 private:
-	Data& mData = Data::GetIncetence();
+	Data& mData = Data::GetInstance();
 };

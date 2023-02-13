@@ -34,5 +34,5 @@ private:
 	void ThreadMain(HANDLE pComPort);
 
 private:
-	Data& mData = Data::GetIncetence();
+	Data& mData = Data::GetInstance();
 };

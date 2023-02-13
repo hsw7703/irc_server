@@ -15,5 +15,5 @@ private:
 	bool AlreadyRegister(const SOCKET& sock);
 	bool NeedMoreParams(const std::vector<std::string>& msg, const SOCKET& sock);
 private:
-	Data& mData = Data::GetIncetence();
+	Data& mData = Data::GetInstance();
 };

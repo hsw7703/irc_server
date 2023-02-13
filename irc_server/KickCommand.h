@@ -15,5 +15,5 @@ private:
 	bool UserNotInChannel(const std::string& ch, const std::string& nick, const SOCKET& sock);
 	bool NotOnChannel(const std::string& ch, const SOCKET& sock);
 private:
-	Data& mData = Data::GetIncetence();
+	Data& mData = Data::GetInstance();
 };

@@ -15,5 +15,5 @@ private:
 	bool CanNotSendToChannel(const std::string& msgTarget, const SOCKET& sock);
 	bool NoSuchNick(const std::string& msgTarget, const SOCKET& sock);
 private:
-	Data& mData = Data::GetIncetence();
+	Data& mData = Data::GetInstance();
 };

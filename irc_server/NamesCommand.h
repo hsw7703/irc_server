@@ -10,5 +10,5 @@ public:
 	void Run(const std::string& msg, const SOCKET& sock);
 private:
 private:
-	Data& mData = Data::GetIncetence();
+	Data& mData = Data::GetInstance();
 };

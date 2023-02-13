@@ -21,5 +21,5 @@ private:
 	bool ErroneousNickname(const std::string& nick, const SOCKET& sock);
 	bool NicknameInuse(const std::string& nick, const SOCKET& sock);
 private:
-	Data& mData = Data::GetIncetence();
+	Data& mData = Data::GetInstance();
 };

@@ -1,6 +1,6 @@
 #include "Data.h"
 
-Data& Data::GetIncetence() {
+Data& Data::GetInstance() {
 	static Data data;
 	return data;
 }

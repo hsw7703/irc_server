@@ -13,5 +13,5 @@ private:
 	bool NoNicknameGiven(const std::string& target, const SOCKET& sock);
 	bool NoSuchNick(const std::string& target, const SOCKET& sock);
 private:
-	Data& mData = Data::GetIncetence();
+	Data& mData = Data::GetInstance();
 };

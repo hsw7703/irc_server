@@ -17,6 +17,6 @@ private:
 
 //	bool NeedMoreParams(std::string msg, SOCKET sock);
 private:
-	Data& mData = Data::GetIncetence();
+	Data& mData = Data::GetInstance();
 	PartCommand mPartCommand;
 };

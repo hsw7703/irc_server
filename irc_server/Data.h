@@ -12,7 +12,7 @@
 class Data
 {
 public:
-	static Data& GetIncetence();
+	static Data& GetInstance();
 	std::map<SOCKET, User>& GetUser();
 	std::map<std::string, Channel>& GetChannel();
 	const std::string& GetDate() const;

@@ -13,6 +13,6 @@ private:
 	bool NotOnChannel(const std::string& msg, const SOCKET& sock);
 	bool NotChannelOperator(const std::string& msg, const SOCKET& sock);
 private:
-	Data& mData = Data::GetIncetence();
+	Data& mData = Data::GetInstance();
 };
 
